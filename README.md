@@ -5,13 +5,11 @@
 <h1 align="center">Brim</h1>
 
 <p align="center">
-  <strong>Semantic Search for Laravel</strong><br>
-  Local-first. Privacy-focused. Zero API costs.
+  <strong>Bringing Retrieval to Indexed Models</strong><br>
+  Semantic search for Laravel. Local-first, no API keys required.
 </p>
 
 <p align="center">
-  <a href="https://packagist.org/packages/brimleylabs/brim"><img src="https://img.shields.io/packagist/v/brimleylabs/brim.svg?style=flat-square" alt="Latest Version"></a>
-  <a href="https://packagist.org/packages/brimleylabs/brim"><img src="https://img.shields.io/packagist/dt/brimleylabs/brim.svg?style=flat-square" alt="Total Downloads"></a>
   <a href="https://github.com/brimleylabs/brim/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License"></a>
   <a href="https://php.net"><img src="https://img.shields.io/badge/php-8.2+-8892BF.svg?style=flat-square" alt="PHP Version"></a>
   <a href="https://laravel.com"><img src="https://img.shields.io/badge/laravel-10.x--12.x-FF2D20.svg?style=flat-square" alt="Laravel Version"></a>
@@ -22,7 +20,8 @@
   <a href="#-installation">Installation</a> •
   <a href="#-usage">Usage</a> •
   <a href="#-configuration">Configuration</a> •
-  <a href="#-advanced">Advanced</a>
+  <a href="#-advanced">Advanced</a> •
+  <a href="#-testing">Testing</a>
 </p>
 
 ---
@@ -889,6 +888,35 @@ dd(method_exists($article, 'generateEmbedding')); // Should be true
 // Check toEmbeddableText returns content
 dd($article->toEmbeddableText()); // Should show text
 ```
+
+---
+
+## 🧪 Testing
+
+Brim includes a comprehensive test suite built with PHPUnit and Orchestra Testbench.
+
+```bash
+# Run all tests
+composer test
+
+# Run with testdox output
+./vendor/bin/phpunit --testdox
+
+# Run specific test groups
+./vendor/bin/phpunit --group=unit
+./vendor/bin/phpunit --group=feature
+./vendor/bin/phpunit --group=drivers
+./vendor/bin/phpunit --group=commands
+./vendor/bin/phpunit --group=integration
+```
+
+**Test Coverage:**
+- **165 tests** with **309 assertions**
+- Unit tests for TextChunker, RetryHandler, Models
+- Driver tests for Ollama and OpenAI with mocked HTTP
+- Feature tests for HasEmbeddings trait, Events, BrimService
+- Command tests for all Artisan commands
+- Integration tests for full embedding/search workflows
 
 ---
 
