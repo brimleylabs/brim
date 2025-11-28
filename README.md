@@ -10,6 +10,8 @@
 </p>
 
 <p align="center">
+  <a href="https://packagist.org/packages/brimleylabs/brim"><img src="https://img.shields.io/packagist/v/brimleylabs/brim.svg?style=flat-square" alt="Latest Version"></a>
+  <a href="https://packagist.org/packages/brimleylabs/brim"><img src="https://img.shields.io/packagist/dt/brimleylabs/brim.svg?style=flat-square" alt="Total Downloads"></a>
   <a href="https://github.com/brimleylabs/brim/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="License"></a>
   <a href="https://php.net"><img src="https://img.shields.io/badge/php-8.2+-8892BF.svg?style=flat-square" alt="PHP Version"></a>
   <a href="https://laravel.com"><img src="https://img.shields.io/badge/laravel-10.x--12.x-FF2D20.svg?style=flat-square" alt="Laravel Version"></a>
