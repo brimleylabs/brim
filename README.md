@@ -45,34 +45,14 @@ Article::semanticSearch('red car')->get();
 
 ## ✨ Why Brim?
 
-<table>
-<tr>
-<td width="50%">
-
-### 🔒 Privacy First
-Your data **never leaves your server**. Embeddings are generated locally using Ollama. No third-party API calls unless you explicitly choose OpenAI.
-
-### 💰 Zero API Costs
-No per-query charges. No token limits. Generate unlimited embeddings and run unlimited searches.
-
-### ⚡ Production Ready
-HNSW indexing for sub-millisecond searches. Batch operations. Queue support. Built-in telemetry.
-
-</td>
-<td width="50%">
-
-### 🎯 Laravel Native
-Eloquent trait integration. Familiar syntax. Model observers for automatic sync. Works with your existing codebase.
-
-### 🔌 Extensible
-Swap between Ollama (local) and OpenAI (cloud). Custom drivers supported. Multiple embedding namespaces per model.
-
-### 📊 Observable
-Built-in telemetry tracks embedding generation, search performance, and system health.
-
-</td>
-</tr>
-</table>
+| | |
+|---|---|
+| **🔒 Privacy First** | **🎯 Laravel Native** |
+| Your data never leaves your server. Embeddings are generated locally using Ollama. No third-party API calls unless you explicitly choose OpenAI. | Eloquent trait integration. Familiar syntax. Model observers for automatic sync. Works with your existing codebase. |
+| **💰 Zero API Costs** | **🔌 Extensible** |
+| No per-query charges. No token limits. Generate unlimited embeddings and run unlimited searches. | Swap between Ollama (local) and OpenAI (cloud). Custom drivers supported. Multiple embedding namespaces per model. |
+| **⚡ Production Ready** | **📊 Observable** |
+| HNSW indexing for sub-millisecond searches. Batch operations. Queue support. Built-in telemetry. | Built-in telemetry tracks embedding generation, search performance, and system health. |
 
 ---
 
