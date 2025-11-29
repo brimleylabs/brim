@@ -872,6 +872,14 @@ dd($article->toEmbeddableText()); // Should show text
 
 ---
 
+## 🎬 Live Demo
+
+See Brim in action with our interactive demo:
+
+**[brimleylabs.com/brim](https://brimleylabs.com/brim)**
+
+---
+
 ## 🧪 Testing
 
 Brim includes a comprehensive test suite built with PHPUnit and Orchestra Testbench.
@@ -919,7 +927,8 @@ Named after Brimley, the goodest boy who inspired this project. Like a loyal com
 
 ## 👨‍💻 Credits
 
-- [Matthew Summers](https://github.com/brimleylabs)
+- [Matthew Summers](https://github.com/brimleylabs) - Creator
+- [Brimley Labs](https://brimleylabs.com) - Home of Matthew's open source projects
 - [All Contributors](../../contributors)
 
 ## 📄 License
@@ -929,5 +938,5 @@ The MIT License (MIT). Please see [LICENSE](LICENSE) for more information.
 ---
 
 <p align="center">
-  <sub>Built with ❤️ for the Laravel community</sub>
+  <sub>Built with ❤️ for the Laravel community by <a href="https://brimleylabs.com">Brimley Labs</a></sub>
 </p>
