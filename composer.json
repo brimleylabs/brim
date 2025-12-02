@@ -1,0 +1,70 @@
+{
+    "name": "brimleylabs/brim",
+    "description": "Semantic search for Laravel using Ollama and pgvector. Local-first, privacy-focused, no API keys required.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "semantic-search",
+        "embeddings",
+        "ollama",
+        "openai",
+        "pgvector",
+        "vector-search",
+        "vector-database",
+        "ai",
+        "machine-learning",
+        "nlp",
+        "similarity-search"
+    ],
+    "homepage": "https://github.com/brimleylabs/brim",
+    "authors": [
+        {
+            "name": "Matthew Summers",
+            "homepage": "https://github.com/brimleylabs"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/brimleylabs/brim/issues",
+        "source": "https://github.com/brimleylabs/brim"
+    },
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^10.0|^11.0|^12.0",
+        "illuminate/database": "^10.0|^11.0|^12.0",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.0|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brim\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brim\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brim\\BrimServiceProvider"
+            ],
+            "aliases": {
+                "Brim": "Brim\\Facades\\Brim"
+            }
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
